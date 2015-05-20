@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'add_controler.ui'
+#
+# Created: Tue Nov  4 21:14:08 2014
+#      by: PyQt5 UI code generator 5.3.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(290, 260)
+        Dialog.setMinimumSize(QtCore.QSize(290, 260))
+        Dialog.setMaximumSize(QtCore.QSize(290, 260))
+        self.groupBox = QtWidgets.QGroupBox(Dialog)
+        self.groupBox.setGeometry(QtCore.QRect(10, 10, 271, 191))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.groupBox.setFont(font)
+        self.groupBox.setStyleSheet("QGroupBox {border-color: rgb(0, 0, 0);border-style: solid; border-width: 1px;}")
+        self.groupBox.setObjectName("groupBox")
+        self.lineName = QtWidgets.QLineEdit(self.groupBox)
+        self.lineName.setGeometry(QtCore.QRect(60, 30, 201, 22))
+        self.lineName.setObjectName("lineName")
+        self.label = QtWidgets.QLabel(self.groupBox)
+        self.label.setGeometry(QtCore.QRect(20, 30, 31, 21))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.lineIPAddress = QtWidgets.QLineEdit(self.groupBox)
+        self.lineIPAddress.setGeometry(QtCore.QRect(60, 70, 101, 22))
+        self.lineIPAddress.setObjectName("lineIPAddress")
+        self.label_2 = QtWidgets.QLabel(self.groupBox)
+        self.label_2.setGeometry(QtCore.QRect(10, 70, 41, 21))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.linePort = QtWidgets.QLineEdit(self.groupBox)
+        self.linePort.setGeometry(QtCore.QRect(230, 70, 31, 22))
+        self.linePort.setObjectName("linePort")
+        self.label_3 = QtWidgets.QLabel(self.groupBox)
+        self.label_3.setGeometry(QtCore.QRect(190, 70, 41, 21))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.groupBox)
+        self.label_4.setGeometry(QtCore.QRect(10, 110, 53, 21))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.groupBox)
+        self.label_5.setGeometry(QtCore.QRect(10, 150, 131, 21))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.lineNewPassword = QtWidgets.QLineEdit(self.groupBox)
+        self.lineNewPassword.setGeometry(QtCore.QRect(150, 110, 113, 22))
+        self.lineNewPassword.setInputMethodHints(QtCore.Qt.ImhHiddenText|QtCore.Qt.ImhNoAutoUppercase|QtCore.Qt.ImhNoPredictiveText|QtCore.Qt.ImhSensitiveData)
+        self.lineNewPassword.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.lineNewPassword.setObjectName("lineNewPassword")
+        self.lineNewPasswordRepeat = QtWidgets.QLineEdit(self.groupBox)
+        self.lineNewPasswordRepeat.setGeometry(QtCore.QRect(150, 150, 113, 22))
+        self.lineNewPasswordRepeat.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.lineNewPasswordRepeat.setObjectName("lineNewPasswordRepeat")
+        self.btnSave = QtWidgets.QPushButton(Dialog)
+        self.btnSave.setGeometry(QtCore.QRect(110, 220, 75, 23))
+        self.btnSave.setObjectName("btnSave")
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Добавяне на контролер"))
+        self.groupBox.setTitle(_translate("Dialog", "Данни за контролера"))
+        self.label.setText(_translate("Dialog", "Име"))
+        self.lineIPAddress.setInputMask(_translate("Dialog", "000.000.000.000;_"))
+        self.label_2.setText(_translate("Dialog", "Адрес"))
+        self.linePort.setInputMask(_translate("Dialog", "000;_"))
+        self.label_3.setText(_translate("Dialog", "Порт"))
+        self.label_4.setText(_translate("Dialog", "Парола"))
+        self.label_5.setText(_translate("Dialog", "Повторете парола"))
+        self.btnSave.setText(_translate("Dialog", "Запис"))
+
