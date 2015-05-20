@@ -26,7 +26,7 @@ class ControlerCommandSender(QThread):
                    "Accept": "text/plain"}
 
         # make exit setup params
-        paramsSave = urllib.parse.urlencode({'PSW': 'Save'})
+        # paramsSave = urllib.parse.urlencode({'PSW': 'Save'})
 
         # make exit setup params
         paramsExit = urllib.parse.urlencode({'PSW': 'Exit'})
